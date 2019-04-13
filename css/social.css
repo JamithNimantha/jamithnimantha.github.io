@@ -1,0 +1,50 @@
+.s-media{
+    position: fixed;
+    top: 100px ;
+    left: 0;
+    z-index: 1000;
+    transition:all linear 0.2s ;
+}
+.s-media a:first-child{
+    border-radius: 0 5px 0 0;
+}
+.s-media a:last-child{
+    border-radius: 0 0 5px 0;
+}
+.s-item {
+    display:block;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+
+    transition:all linear 0.2s ;
+}
+.s-item:hover {
+    width:70px;
+
+}
+
+#sm-open {
+    position: fixed;
+    top: 100px ;
+    left: -60px;
+    border-radius:0 30px 30px 0;
+
+    transition:all linear 0.2s ;
+}
+.facebook {background-color: #305891;}
+.linkedin {background-color: #3AAFD6;}
+.stack-exchange {background-color: #0a1a63; }
+.stack-overflow {background-color: #c28b1e; }
+.github {background-color: #202020;}
+.print {background-color: #7CB0A4;}
+.sm-collapse{left: -60px; }
+
+@media only screen and (max-width: 1143px){
+    .s-media{
+        display: none;
+    }
+}
