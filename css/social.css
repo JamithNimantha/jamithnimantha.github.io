@@ -36,9 +36,10 @@
     transition:all linear 0.2s ;
 }
 .facebook {background-color: #305891;}
-.linkedin {background-color: #3AAFD6;}
-.stack-exchange {background-color: #0a1a63; }
-.stack-overflow {background-color: #c28b1e; }
+.twitter {background-color: #4588db;}
+.linkedin {background-color: #2d6f93;}
+.stack-exchange {background-color: #16b9ff; }
+.stack-overflow {background-color: #748c00; }
 .github {background-color: #202020;}
 .print {background-color: #7CB0A4;}
 .sm-collapse{left: -60px; }
