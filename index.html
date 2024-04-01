@@ -1,541 +1,468 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 8 ]>https://github.com/JamithNimantha/jamithnimantha.github.io/blob/master/index.html
+<html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<title>Under Construction</title>
-	<style type="text/css">
-		@import url("https://fonts.googleapis.com/css?family=Ubuntu");
-#outerCraneContainer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  box-shadow: inset 0 -60px 0 -30px #ff6347;
-}
-.buildings {
-  height: 84.9673202614379px;
-  width: 100%;
-  left: 0;
-}
-.buildings div {
-  height: inherit;
-  width: 42.48366013071895px;
-  background: #ff6347;
-  position: absolute;
-  bottom: 10%;
-}
-.buildings div:after {
-  content: '';
-  width: 80%;
-  height: 60%;
-  left: 10%;
-  bottom: 30%;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAFElEQVQImWP4////fwYYIJKDEwAAfPsP8eFXG40AAAAASUVORK5CYII=") repeat;
-  position: absolute;
-}
-.buildings div:nth-of-type(1) {
-  width: 42.48366013071895px;
-  height: 21.241830065359476px;
-  right: 37%;
-  bottom: 18%;
-}
-.buildings div:nth-of-type(1):after {
-  bottom: 11%;
-}
-.buildings div:nth-of-type(2) {
-  width: 48.552754435107374px;
-  height: 28.322440087145967px;
-  right: 30%;
-  bottom: 35%;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-.buildings div:nth-of-type(2):after {
-  width: 60%;
-  left: 11%;
-}
-.buildings div:nth-of-type(3) {
-  width: 24.276377217553687px;
-  height: 37.76325344952796px;
-  left: 40%;
-  bottom: 35%;
-}
-.buildings div:nth-of-type(3):after {
-  bottom: 0;
-  width: 20%;
-  height: 85%;
-  left: 70%;
-}
-.buildings div:nth-of-type(4) {
-  width: 84.9673202614379px;
-  height: 21.241830065359476px;
-  left: 24%;
-  bottom: 20%;
-}
-.buildings div:nth-of-type(4):after {
-  background: none;
-}
-.buildings div:nth-of-type(5) {
-  width: 61.794414735591204px;
-  height: 67.97385620915033px;
-  left: 47%;
-  bottom: 10%;
-}
-.buildings div:nth-of-type(5):after {
-  bottom: 0;
-  width: 40%;
-  height: 85%;
-  left: 20%;
-}
-.crane,
-.buildings {
-  position: absolute;
-  bottom: 0;
-}
-.crane div {
-  border-radius: 2px;
-  position: absolute;
-}
-.crane .line {
-  border: none;
-  background: #ff6347;
-  outline: 1px solid transparent;
-  z-index: 0;
-}
-.crane .lineOne {
-  width: 60%;
-  left: 11%;
-  top: 0;
-}
-.crane .lineTwo {
-  width: 19%;
-  right: 8%;
-  top: 0;
-}
-.crane .line.lineThree {
-  height: 30%;
-  top: 22%;
-  left: 9%;
-}
-.crane .line.lineThree:after {
-  content: '';
-  position: absolute;
-  height: 0.2em;
-  width: 9000%;
-  background: #ff826c;
-  display: block;
-  bottom: 0;
-  left: -4500%;
-  border: solid 1px #ff6347;
-}
-.craneTwo .line.lineThree:after {
-  height: 0.1em;
-}
-.craneThree .line.lineThree:after {
-  height: 0.05em;
-}
-.stand {
-  height: 100%;
-  width: 5%;
-  right: 25%;
-  z-index: 1;
-  background: linear-gradient(to top, #ff6347, #f29b8b);
-}
-.craneTwo .stand {
-  background: linear-gradient(to top, #ff6347, #f19483);
-}
-.craneThree .stand {
-  background: linear-gradient(to top, #ff6347, #f08c7b);
-}
-.weight {
-  height: 20%;
-  width: 8%;
-  right: 4%;
-  top: 12%;
-  z-index: 2;
-  background: #f88f7c;
-}
-.craneTwo .weight {
-  background: #f88773;
-}
-.craneThree .weight {
-  background: #f77f6b;
-}
-.cabin {
-  height: 9%;
-  width: 12%;
-  right: 24%;
-  top: 20%;
-  z-index: 2;
-  background: #f88f7c;
-}
-.cabin:after {
-  content: '';
-  position: absolute;
-  height: 10%;
-  width: 100%;
-  background: #fff;
-  display: block;
-  top: 60%;
-  left: 0;
-}
-.craneTwo .cabin {
-  background: #f88773;
-}
-.craneThree .cabin {
-  background: #f77f6b;
-}
-.arm {
-  height: 7%;
-  width: 100%;
-  top: 15%;
-  z-index: 3;
-  background: #f88f7c;
-}
-.craneTwo .arm {
-  background: #f88773;
-}
-.craneThree .arm {
-  background: #f77f6b;
-}
-.crane div.arm {
-  border-top-left-radius: 10px;
-}
-.brick {
-  height: 6%;
-  width: 9%;
-  bottom: 0;
-  left: 40%;
-  background: #ff7359;
-}
-.brickTwo {
-  left: 48%;
-}
-.brickThree {
-  bottom: 5.5%;
-  left: 44%;
-}
-.craneOne {
-  width: 260px;
-  height: 169.9346405228758px;
-  left: 20%;
-}
-.craneOne div {
-  border: solid 1px #ff6347;
-}
-.craneOne .line {
-  height: 1px;
-}
-.craneOne .lineThree {
-  width: 1px;
-}
-.craneTwo {
-  width: 200px;
-  height: 130.718954248366px;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  left: 40%;
-  z-index: -1;
-}
-.craneTwo div {
-  border: solid 1px #ff6347;
-}
-.craneTwo .line {
-  height: 0.769230769230769px;
-}
-.craneTwo .lineThree {
-  width: 0.714285714285714px;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-.craneTwo .cabin,
-.craneTwo .arm,
-.craneTwo .picker,
-.craneTwo .weight {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-.craneThree {
-  width: 130px;
-  height: 84.9673202614379px;
-  left: 60%;
-  z-index: -1;
-}
-.craneThree div {
-  border: solid 1px #ff6347;
-}
-.craneThree .line {
-  height: 0.5px;
-}
-.craneThree .lineThree {
-  width: 0.5px;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-.craneThree .brickThree {
-  bottom: 5%;
-}
-.craneThree .brickOne,
-.craneThree .brickTwo {
-  bottom: 0;
-}
-.craneThree .cabin,
-.craneThree .arm,
-.craneThree .picker,
-.craneThree .weight {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-.crane {
-  -webkit-perspective: 600px;
-          perspective: 600px;
-}
-.lineOne {
-  -webkit-transform-origin: right 0;
-          transform-origin: right 0;
-  -webkit-animation: moveLineOne 12s infinite alternate;
-          animation: moveLineOne 12s infinite alternate;
-}
-.lineTwo {
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-animation: moveLineTwo 12s infinite alternate;
-          animation: moveLineTwo 12s infinite alternate;
-}
-.lineThree {
-  -webkit-transform-origin: right center;
-          transform-origin: right center;
-  -webkit-animation: moveLineThree 12s ease-in-out infinite alternate;
-          animation: moveLineThree 12s ease-in-out infinite alternate;
-}
-.cabin,
-.arm,
-.picker {
-  -webkit-transform-origin: 80% center;
-          transform-origin: 80% center;
-  -webkit-animation: moveCrane 12s infinite alternate;
-          animation: moveCrane 12s infinite alternate;
-}
-.weight {
-  -webkit-transform-origin: 0 center;
-          transform-origin: 0 center;
-  -webkit-animation: moveWeight 12s infinite alternate;
-          animation: moveWeight 12s infinite alternate;
-}
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-}
-html,
-body {
-  height: 100%;
-}
-* {
-  box-sizing: border-box;
-}
-body {
-  background: linear-gradient(to top, #ffa191, #ffc247);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-}
-#content {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: Ubuntu;
-  color: #fff;
-}
-#content h1,
-#content p {
-  margin: -8rem 0 0 1rem;
-}
-#content p {
-  margin-top: 0.5rem;
-}
-#license {
-  position: absolute;
-  bottom: 0;
-  right: 5px;
-}
-@-webkit-keyframes moveCrane {
-  0%, 20% {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  70%, 100% {
-    -webkit-transform: rotateY(45deg);
-            transform: rotateY(45deg);
-  }
-}
-@keyframes moveCrane {
-  0%, 20% {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  70%, 100% {
-    -webkit-transform: rotateY(45deg);
-            transform: rotateY(45deg);
-  }
-}
-@-webkit-keyframes moveWeight {
-  0%, 20% {
-    -webkit-transform: rotateY(0) translateX(0);
-            transform: rotateY(0) translateX(0);
-  }
-  70%, 100% {
-    -webkit-transform: rotateY(45deg) translateX(-50%);
-            transform: rotateY(45deg) translateX(-50%);
-  }
-}
-@keyframes moveWeight {
-  0%, 20% {
-    -webkit-transform: rotateY(0) translateX(0);
-            transform: rotateY(0) translateX(0);
-  }
-  70%, 100% {
-    -webkit-transform: rotateY(45deg) translateX(-50%);
-            transform: rotateY(45deg) translateX(-50%);
-  }
-}
-@-webkit-keyframes moveLineOne {
-  0%, 20% {
-    -webkit-transform: rotateY(0) rotateZ(-10deg);
-            transform: rotateY(0) rotateZ(-10deg);
-  }
-  70%, 100% {
-    -webkit-transform: rotateY(45deg) rotateZ(-10deg);
-            transform: rotateY(45deg) rotateZ(-10deg);
-  }
-}
-@keyframes moveLineOne {
-  0%, 20% {
-    -webkit-transform: rotateY(0) rotateZ(-10deg);
-            transform: rotateY(0) rotateZ(-10deg);
-  }
-  70%, 100% {
-    -webkit-transform: rotateY(45deg) rotateZ(-10deg);
-            transform: rotateY(45deg) rotateZ(-10deg);
-  }
-}
-@-webkit-keyframes moveLineTwo {
-  0%, 20% {
-    -webkit-transform: rotateY(0) rotateZ(29deg);
-            transform: rotateY(0) rotateZ(29deg);
-  }
-  70%, 100% {
-    -webkit-transform: rotateY(15deg) rotateZ(29deg);
-            transform: rotateY(15deg) rotateZ(29deg);
-  }
-}
-@keyframes moveLineTwo {
-  0%, 20% {
-    -webkit-transform: rotateY(0) rotateZ(29deg);
-            transform: rotateY(0) rotateZ(29deg);
-  }
-  70%, 100% {
-    -webkit-transform: rotateY(15deg) rotateZ(29deg);
-            transform: rotateY(15deg) rotateZ(29deg);
-  }
-}
-@-webkit-keyframes moveLineThree {
-  0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  20% {
-    -webkit-transform: translate(2500%, -18%);
-            transform: translate(2500%, -18%);
-  }
-  60% {
-    -webkit-transform: translate(11000%, -25%);
-            transform: translate(11000%, -25%);
-  }
-  70% {
-    -webkit-transform: translate(9100%, -25%);
-            transform: translate(9100%, -25%);
-    height: 30%;
-  }
-  90%, 100% {
-    -webkit-transform: translate(9100%, -15%);
-            transform: translate(9100%, -15%);
-    height: 80%;
-  }
-}
-@keyframes moveLineThree {
-  0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  20% {
-    -webkit-transform: translate(2500%, -18%);
-            transform: translate(2500%, -18%);
-  }
-  60% {
-    -webkit-transform: translate(11000%, -25%);
-            transform: translate(11000%, -25%);
-  }
-  70% {
-    -webkit-transform: translate(9100%, -25%);
-            transform: translate(9100%, -25%);
-    height: 30%;
-  }
-  90%, 100% {
-    -webkit-transform: translate(9100%, -15%);
-            transform: translate(9100%, -15%);
-    height: 80%;
-  }
-}
+
+    <meta charset="utf-8">
+    <title>Jamith Nimantha</title>
+    <meta
+            content="Jamith,
+      Jamith Nimantha,
+      Sri Lanka,
+      Galle,
+      Developer,
+      Java Developer,
+      Android Developer,
+      Web Developer,
+      web development,
+      Freelancers in Sri Lanka,
+      Web development Freelancers,
+      Software Developer,
+      Mobile App Developer,
+      Blogger,"
+            name="keywords"
+    />
+    <meta content="I'm a Full-Stack Software Developer Working And Living in Galle, Sri Lanka.
+	My Area of Expertise is Web Application and Mobile Application Development." name="description">
+    <meta content="" name="author">
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+    <link rel="stylesheet" href="css/default.css">
+    <link href="css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+
+    <script src="js/modernizr.js"></script>
 
 
-	</style>
+    <link href="favicon.png" rel="shortcut icon">
+
+    <!-- signature
+
+    ############      ##            ###         ###     #######     ############    ###      ###
+        ###          ####           ####       ####       ###           ###         ###      ###
+        ###         ######          ### ##   ######       ###           ###         ###      ###
+        ###        ###  ###         ###  ## ##  ###       ###           ###         ############
+        ###       ##########        ###   ##    ###       ###           ###         ############
+    ##  ###      ###      ###       ###         ###       ###           ###         ###      ###
+    #######     ###        ###      ###         ###       ###           ###         ###      ###
+     #####     ###          ###     ###         ###     #######         ###         ###      ###
+
+-->
 </head>
+
 <body>
-	<div id="content">
-  <h1>< building /></h1>
-  <p>Working day and night!</p>
+<div id="preloader"></div>
+
+<div class="s-media">
+    <a href="https://www.facebook.com/JamithNimantha/" target="_blank" class="s-item facebook">
+        <span class="fa fa-facebook" style="color: white"></span>
+    </a>
+
+    <a href="https://twitter.com/JamithNimantha" target="_blank" class="s-item twitter">
+        <span class="fa fa-twitter" style="color: white"></span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/JamithNimantha" target="_blank" class="s-item linkedin">
+        <span class="fa fa-linkedin" style="color: white"></span>
+    </a>
+
+    <a href="https://github.com/JamithNimantha" target="_blank" class="s-item github">
+        <span class="fa fa-github" style="color: white"></span>
+    </a>
+
+    <a class="s-item stack-overflow" href="https://stackoverflow.com/users/8958938/jamith" target="_blank">
+        <span class="fa fa-stack-overflow" style="color: white"></span>
+    </a>
+
+    <a class="s-item gitlab" href="https://gitlab.com/jamith" target="_blank">
+        <span class="fa fa-gitlab" style="color: white"></span>
+    </a>
+
+    <!--    <a href="/" target="_blank" class="s-item stack-exchange">-->
+    <!--        <span class="fa fa-stack-exchange" style="color: white"></span>-->
+    <!--    </a>-->
+
+    <a class="s-item print" id="sm-close">
+        <span class="fa fa-arrow-left"></span>
+    </a>
+    <a class="s-item print sm-collapse" id="sm-open">
+        <span class="fa fa-arrow-right"></span>
+    </a>
 </div>
-<div id="outerCraneContainer">
-  <div class="buildings">
-    <div></div>
-    <div class="1"></div>
-    <div class="2"></div>
-    <div class="3"></div>
-    <div class="4"></div>
-  </div>
-  <div class="crane craneThree">
-    <div class="line lineOne"></div>
-    <div class="line lineTwo"></div>
-    <div class="line lineThree"></div>
-    <div class="stand"></div>
-    <div class="weight"></div>
-    <div class="cabin"></div>
-    <div class="arm"></div>
-  </div>
-  <div class="crane craneTwo">
-    <div class="line lineOne"></div>
-    <div class="line lineTwo"></div>
-    <div class="line lineThree"></div>
-    <div class="stand"></div>
-    <div class="weight"></div>
-    <div class="cabin"></div>
-    <div class="arm"></div>
-  </div>
-  <div class="crane craneOne">
-    <div class="line lineOne"></div>
-    <div class="line lineTwo"></div>
-    <div class="line lineThree"></div>
-    <div class="stand"></div>
-    <div class="weight"></div>
-    <div class="cabin"></div>
-    <div class="arm"></div>
-  </div>
-</div>
+
+
+<header id="home">
+
+     <!-- end #nav-wrap -->
+
+    <div class="row banner">
+        <div class="banner-text">
+            <h1 class="responsive-headline">I'm Jamith Nimantha</h1>
+            <h3><span>I'm a Software Engineer Based in Galle, Sri Lanka.<br>
+               
+            </span></h3>
+            <hr/>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/JamithNimantha" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/JamithNimantha" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/JamithNimantha" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://github.com/JamithNimantha" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://stackoverflow.com/users/8958938/jamith" target="_blank"><i
+                        class="fa fa-stack-overflow"></i></a></li>
+                <li><a href="https://gitlab.com/jamith" target="_blank"><i class="fa fa-gitlab"></i></a></li>
+                <!--                <li><a href="https://meta.stackexchange.com/users/479689/jamith-nimantha" target="_blank"><i class="fa fa-stack-exchange"></i></a></li>-->
+            </ul>
+        </div>
+    </div>
+
+    <!-- <p class="scrolldown">
+        <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+    </p> -->
+
+</header>
+
+<div id="fb-root"></div>
+
+<!-- <section id="about">
+
+    <div class="row">
+
+        <div class="three columns">
+
+            <img alt="" class="profile-pic" src="images/jamith.jpeg"/>
+
+        </div>
+
+        <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>I am a skilled self motivated,innovative and forward thinking software developer. I love to learn new
+                technologies and
+                starting new projects with those technologies. I'm passionate about my work as a software developer.
+            </p>
+
+            <div class="row">
+
+                <div class="columns contact-details">
+
+                    <h2>Contact Details</h2>
+                    <p class="address">
+                        <span>jamithnimantha@gmail.com</span>
+                    </p>
+
+                </div>
+
+                <div class="columns download">
+                    <p>
+                        <a class="button" href="Jamith's%20Resume.pdf" target="_blank"><i class="fa fa-download"></i>Download
+                            Resume</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section> -->
+÷
+
+<!-- Portfolio Section
+================================================== -->
+<!--<section id="portfolio">-->
+
+<!--    &lt;!&ndash;<divd class="row">&ndash;&gt;-->
+
+<!--    <h1>Check Out Some of My Works.</h1>-->
+
+
+<!--    &lt;!&ndash; portfolio-wrapper &ndash;&gt;-->
+<!--    &lt;!&ndash;<divdcd id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">&ndash;&gt;-->
+<!--    &lt;!&ndash;<divcdac >&ndash;&gt;-->
+<!--    <div class="portfoliofilter container">-->
+<!--        <ul>-->
+<!--            <li>-->
+<!--                <a-->
+<!--                        class="selected btn btn-lg btn-nesto-o"-->
+<!--                        data-filter="*"-->
+<!--                        href="#"-->
+<!--                        title="All"-->
+<!--                >All</a-->
+<!--                >-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a-->
+<!--                        class="btn btn-lg btn-nesto-o"-->
+<!--                        data-filter=".portfolio-web"-->
+<!--                        href="#"-->
+<!--                        title="Web"-->
+<!--                >Web</a-->
+<!--                >-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a-->
+<!--                        class="btn btn-lg btn-nesto-o"-->
+<!--                        data-filter=".portfolio-mobile"-->
+<!--                        href="#"-->
+<!--                        title="Mobile"-->
+<!--                >Mobile</a-->
+<!--                >-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a-->
+<!--                        class="btn btn-lg btn-nesto-o"-->
+<!--                        data-filter=".portfolio-custom-solutions"-->
+<!--                        href="#"-->
+<!--                        title="Custom Solutions"-->
+<!--                >Custom Solutions</a-->
+<!--                >-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-4 col-sm-4 col-xs-12 ">-->
+<!--            <ul class="portfolio-grid">-->
+<!--                <li class="portfolio-custom-solutions">-->
+<!--                    <div class="portfolio-content">-->
+<!--                        <div class="portfolio-info">-->
+<!--                            <h2>Crime Investigation System</h2>-->
+<!--                        </div>-->
+<!--                        <a-->
+<!--                                class="btn-link"-->
+<!--                                href="https://github.com/jamith-nimantha/criminal-record-management-system"-->
+<!--                                target="_blank"-->
+<!--                                title=""-->
+<!--                        >-->
+<!--                            <i class="fa fa-link"></i>-->
+<!--                        </a>-->
+<!--                        <img-->
+<!--                                alt="Crime Investigation System"-->
+<!--                                src="images/small_images/criminal.png"-->
+
+<!--                        />-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="portfolio-custom-solutions">-->
+<!--                    <div class="portfolio-content">-->
+<!--                        <div class="portfolio-info">-->
+<!--                            <h2>Gym Management System</h2>-->
+<!--                        </div>-->
+<!--                        <a-->
+<!--                                class="btn-link"-->
+<!--                                href="https://github.com/jamith-nimantha/GymManagementSystem"-->
+<!--                                target="_blank"-->
+<!--                                title=""-->
+<!--                        >-->
+<!--                            <i class="fa fa-link"></i>-->
+<!--                        </a>-->
+<!--                        <img-->
+<!--                                alt="Ecommerce web development project"-->
+<!--                                src="images/small_images/gym.png"-->
+<!--                        />-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="portfolio-custom-solutions">-->
+<!--                    <div class="portfolio-content">-->
+<!--                        <div class="portfolio-info">-->
+<!--                            <h2>Restaurant Delivery System</h2>-->
+<!--                        </div>-->
+<!--                        <a-->
+<!--                                class="btn-link"-->
+<!--                                href="https://github.com/jamith-nimantha/Dinemore"-->
+<!--                                target="_blank"-->
+<!--                                title=""-->
+<!--                        >-->
+<!--                            <i class="fa fa-link"></i>-->
+<!--                        </a>-->
+<!--                        <img-->
+<!--                                alt="Restaurant Delivery System"-->
+<!--                                src="images/small_images/resturant.png"-->
+<!--                        />-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="portfolio-web">-->
+<!--                    <div class="portfolio-content">-->
+<!--                        <div class="portfolio-info">-->
+<!--                            <h2>Supplement Store</h2>-->
+<!--                        </div>-->
+<!--                        <a-->
+<!--                                class="btn-link"-->
+<!--                                href="https://github.com/jamith-nimantha/supplement-store"-->
+<!--                                target="_blank"-->
+<!--                                title=""-->
+<!--                        >-->
+<!--                            <i class="fa fa-link"></i>-->
+<!--                        </a>-->
+<!--                        <img-->
+<!--                                alt="healthcare app development project"-->
+<!--                                src="images/small_images/supplement_store.png"-->
+<!--                        />-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="portfolio-mobile">-->
+<!--                    <div class="portfolio-content">-->
+<!--                        <div class="portfolio-info">-->
+<!--                            <h2>Open Torch</h2>-->
+<!--                        </div>-->
+<!--                        <a-->
+<!--                                class="btn-link"-->
+<!--                                href="https://github.com/jamith-nimantha/OpenTorch"-->
+<!--                                target="_blank"-->
+<!--                                title=""-->
+<!--                        >-->
+<!--                            <i class="fa fa-link"></i>-->
+<!--                        </a>-->
+<!--                        <img-->
+<!--                                alt="healthcare app development project"-->
+<!--                                src="images/small_images/open_torch.jpg"-->
+<!--                        />-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li id="page2"></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--    &lt;!&ndash;</divcdac>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;</divdcd> &lt;!&ndash; portfolio-wrapper end &ndash;&gt;&ndash;&gt;-->
+
+<!--    &lt;!&ndash;</divd> &lt;!&ndash; twelve columns end &ndash;&gt;&ndash;&gt;-->
+
+<!--    &lt;!&ndash;</divd> &lt;!&ndash; row End &ndash;&gt;&ndash;&gt;-->
+
+<!--</section> &lt;!&ndash; Portfolio Section End&ndash;&gt;-->
+
+<!--<section id="portfolio">-->
+<!--<div class="row">-->
+<!--<div class="twelve column collapsed">-->
+
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+
+
+<!-- Testimonials Section
+================================================== -->
+<!--<section id="testimonials">-->
+
+<!--<div class="text-container">-->
+
+<!--<div class="row">-->
+
+<!--<div class="two columns header-col">-->
+
+<!--<h1><span>Client Testimonials</span></h1>-->
+
+<!--</div>-->
+
+<!--<div class="ten columns flex-container">-->
+
+<!--<div class="flexslider">-->
+
+<!--<ul class="slides">-->
+
+<!--<li>-->
+<!--<blockquote>-->
+<!--<p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is-->
+<!--to do what you believe is great work. And the only way to do great work is to love what you do.-->
+<!--If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.-->
+<!--</p>-->
+<!--<cite>Steve Jobs</cite>-->
+<!--</blockquote>-->
+<!--</li> &lt;!&ndash; slide ends &ndash;&gt;-->
+
+<!--<li>-->
+<!--<blockquote>-->
+<!--<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
+<!--Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem-->
+<!--nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.-->
+<!--</p>-->
+<!--<cite>Mr. Adobe</cite>-->
+<!--</blockquote>-->
+<!--</li> &lt;!&ndash; slide ends &ndash;&gt;-->
+
+<!--</ul>-->
+
+<!--</div> &lt;!&ndash; div.flexslider ends &ndash;&gt;-->
+
+<!--</div> &lt;!&ndash; div.flex-container ends &ndash;&gt;-->
+
+<!--</div> &lt;!&ndash; row ends &ndash;&gt;-->
+
+<!--</div>  &lt;!&ndash; text-container ends &ndash;&gt;-->
+
+<!--</section> &lt;!&ndash; Testimonials Section End&ndash;&gt;-->
+
+
+<!-- footer
+================================================== -->
+<footer>
+
+    <div class="row">
+
+        <div class="twelve columns">
+
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/BossManLK" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/JamithNimantha" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jamith-nimantha" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://github.com/jamith-nimantha" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://stackoverflow.com/users/8958938/jamith-nimantha" target="_blank"><i
+                        class="fa fa-stack-overflow"></i></a></li>
+                <li><a href="https://gitlab.com/jamithh" target="_blank"><i class="fa fa-gitlab"></i></a></li>
+                <!--                <li><a href="https://meta.stackexchange.com/users/479689/jamith-nimantha" target="_blank"><i class="fa fa-stack-exchange"></i></a></li>-->
+
+            </ul>
+
+            <ul class="copyright">
+                <li>Jamith Nimantha &copy; Copyright 2020</li>
+            </ul>
+
+        </div>
+
+        <div id="go-top"><a class="smoothscroll" href="#home" title="Back to Top"><i class="icon-up-open"></i></a></div>
+
+    </div>
+
+</footer> <!-- Footer End-->
+
+<!-- Java Script
+================================================== -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="js/bundle.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/magnific-popup.js"></script>
+<script src="js/init.js"></script>
+<script src="js/socialmedia_sidebar.js"></script>
+<script>
+    $(window).on('load', function () {
+        var pre_loader = $('#preloader');
+        pre_loader.fadeOut('slow', function () {
+            $(this).remove();
+        });
+    });
+</script>
+
 </body>
+
 </html>
