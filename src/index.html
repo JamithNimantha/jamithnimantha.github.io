@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jamith Nimantha - Full-Stack Developer | Portfolio</title>
+    <base href="/">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYWE19Z98F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HYWE19Z98F');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+            content="Jamith,
+      Jamith Nimantha,
+      Sri Lanka,
+      Galle,
+      Developer,
+      Java Developer,
+      Spring Boot Developer,
+      Angular Developer,
+      Full Stack Developer,
+      Android Developer,
+      Web Developer,
+      web development,
+      Freelancers in Sri Lanka,
+      Web development Freelancers,
+      Software Developer,
+      Mobile App Developer,
+      Blogger,"
+            name="keywords"
+    />
+    <meta content="I'm Jamith Nimantha, a Full Stack Software Developer based in Galle, Sri Lanka.
+    I thrive on crafting robust solutions using Java, Spring Boot, Python and Angular." name="description">
+    <meta content="Jamith Nimantha" name="author">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"/>
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="Jamith"/>
+    <link rel="manifest" href="/assets/favicon/site.webmanifest"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono&display=swap"
+          rel="stylesheet">
+
+    <style>
+        .app-loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f8fafc;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .app-loading {
+                background: #1e293b;
+            }
+
+            .app-loading .logo {
+                filter: invert(1);
+            }
+        }
+
+        .app-loading .logo {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in forwards;
+        }
+
+        .app-loading .spinner {
+            position: relative;
+            width: 40px;
+            height: 40px;
+        }
+
+        .app-loading .spinner:before,
+        .app-loading .spinner:after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .app-loading .spinner:before {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+            animation: spin 0.5s infinite linear;
+        }
+
+        .app-loading .spinner:after {
+            width: 85%;
+            height: 85%;
+            background: #f8fafc;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .app-loading .spinner:after {
+                background: #1e293b;
+            }
+        }
+
+        .app-loading .text {
+            margin-top: 20px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #64748b;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in forwards 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<app-root>
+    <div class="app-loading">
+        <!--      <img src="assets/images/logo.svg" alt="Logo" class="logo">-->
+        <div class="spinner"></div>
+        <div class="text">Loading amazing content...</div>
+    </div>
+</app-root>
+</body>
+</html>
