@@ -1,0 +1,38 @@
+name: Jamith Nimantha
+title: Senior Software Engineer
+website: https://jamith.com
+blog: https://blog.jamith.com
+
+socialLinks:
+  - name: GitHub
+    url: https://github.com/JamithNimantha
+    icon: github
+
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/JamithNimantha
+    icon: linkedin
+
+  - name: Facebook
+    url: https://www.facebook.com/JamithNimantha
+    icon: facebook
+
+  - name: Instagram
+    url: https://www.instagram.com/JamithNimantha
+    icon: instagram
+
+  - name: Twitter
+    url: https://twitter.com/JamithNimantha
+    icon: x
+
+  - name: Blog
+    url: https://blog.jamith.com
+    icon: blog
+
+  - name: Stack Overflow
+    url: https://stackoverflow.com/users/8958938/JamithNimantha
+    icon: stackoverflow
+
+  - name: GitLab
+    url: https://gitlab.com/jamithh
+    icon: gitlab
+
