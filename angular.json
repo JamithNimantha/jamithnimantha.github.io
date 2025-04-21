@@ -102,7 +102,13 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/",
+            "cname": "jamith.com",
+            "name": "JamithNimantha",
+            "email": "jamithnimantha@gmail.com"
+          }
         }
       }
     }
