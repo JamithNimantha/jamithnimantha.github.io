@@ -25,7 +25,7 @@ socialLinks:
     icon: x
 
   - name: Blog
-    url: https://blog.jamith.com
+    url: https://debuggerme.com
     icon: blog
 
   - name: Stack Overflow
@@ -33,6 +33,6 @@ socialLinks:
     icon: stackoverflow
 
   - name: GitLab
-    url: https://gitlab.com/jamithh
+    url: https://gitlab.com/jamith
     icon: gitlab
 
