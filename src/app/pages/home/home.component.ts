@@ -64,7 +64,7 @@ export class HomeComponent {
       id: 1,
       title: "Landing Page for South Lanka Constructions",
       description: "A modern and responsive landing page for a construction company, showcasing their services and projects.",
-      image: "assets/images/projects/southlankaconstructions.png",
+      image: "assets/images/projects/southlankaconstructions.webp",
       technologies: ["HTML5", "CSS3", "PHP", "JavaScript"],
       demoUrl: "https://www.southlankaconstruction.com/",
       category: "Web"
@@ -73,7 +73,7 @@ export class HomeComponent {
       id: 5,
       title: "Personal Portfolio Website",
       description: "Personal portfolio website showcasing projects and skills with a modern, responsive design.",
-      image: "assets/images/projects/personal-portfolio.png",
+      image: "assets/images/projects/personal-portfolio.webp",
       technologies: ["Angular", "TypeScript", "TailwindCSS"],
       link: "https://github.com/JamithNimantha/jamithnimantha.github.io",
       demoUrl: "https://jamith.com",
@@ -87,7 +87,7 @@ export class HomeComponent {
       id: 3,
       title: "Ebook Cover Generator",
       description: "The Ebook Cover Generator is a simple JavaFX desktop application designed to generate bulk ebook cover images based on provided combinations.",
-      image: "assets/images/projects/ebook-cover-generator.png",
+      image: "assets/images/projects/ebook-cover-generator.webp",
       technologies: ["Java", "JavaFX"],
       link: "https://github.com/JamithNimantha/ebook-cover-generator",
       category: "Desktop"
