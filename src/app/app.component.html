@@ -192,16 +192,16 @@
 
         <!-- Desktop Nav Menu -->
         <nav class="hidden md:flex space-x-6">
-          <a (click)="scrollToSection('about')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">About</a>
-          <a (click)="scrollToSection('projects')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">Projects</a>
-          <a (click)="scrollToSection('blog')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">Blog</a>
-          <a (click)="scrollToSection('experience')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">Experience</a>
-          <a (click)="scrollToSection('skills')" class="nav-link hover:scale-110 transition-transform relative group">
+          <div (click)="scrollToSection('about')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">About</div>
+          <div (click)="scrollToSection('projects')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">Projects</div>
+          <div (click)="scrollToSection('blog')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">Blog</div>
+          <div (click)="scrollToSection('experience')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">Experience</div>
+          <div (click)="scrollToSection('skills')" class="nav-link hover:scale-110 transition-transform relative group">
             Skills
             <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary dark:bg-secondary group-hover:w-full transition-all duration-300"></span>
-          </a>
-          <a (click)="scrollToSection('testimonials')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">Testimonials</a>
-          <a (click)="scrollToSection('contact')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">Contact</a>
+          </div>
+          <div (click)="scrollToSection('testimonials')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">Testimonials</div>
+          <div (click)="scrollToSection('contact')" class="nav-link relative cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full">Contact</div>
         </nav>
 
         <!-- Right buttons -->
@@ -217,7 +217,7 @@
           </button>
 
           <!-- Contact button -->
-          <a (click)="scrollToSection('contact')"
+          <div (click)="scrollToSection('contact')"
              class="btn-outline hidden sm:inline-flex items-center transform transition-transform hover:scale-105">
 
             <span>Contact Me</span>
@@ -226,7 +226,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
-          </a>
+          </div>
 
           <!-- Mobile menu button -->
           <button (click)="toggleMenu()" class="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary">
@@ -242,13 +242,13 @@
     <!-- Mobile menu -->
     <div *ngIf="isMenuOpen" class="md:hidden bg-white dark:bg-gray-800 shadow-md animate-slide-down overflow-hidden">
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <a (click)="scrollToSection('about')" class="mobile-nav-link block w-full text-left px-3 py-2">About</a>
-        <a (click)="scrollToSection('projects')" class="mobile-nav-link block w-full text-left px-3 py-2">Projects</a>
-        <a (click)="scrollToSection('blog')" class="mobile-nav-link block w-full text-left px-3 py-2">Blog</a>
-        <a (click)="scrollToSection('experience')" class="mobile-nav-link block w-full text-left px-3 py-2">Experience</a>
-        <a (click)="scrollToSection('skills')" class="mobile-nav-link block w-full text-left px-3 py-2">Skills</a>
-        <a (click)="scrollToSection('testimonials')" class="mobile-nav-link block w-full text-left px-3 py-2">Testimonials</a>
-        <a (click)="scrollToSection('contact')" class="mobile-nav-link block w-full text-left px-3 py-2">Contact</a>
+        <div (click)="scrollToSection('about')" class="mobile-nav-link block w-full text-left px-3 py-2">About</div>
+        <div (click)="scrollToSection('projects')" class="mobile-nav-link block w-full text-left px-3 py-2">Projects</div>
+        <div (click)="scrollToSection('blog')" class="mobile-nav-link block w-full text-left px-3 py-2">Blog</div>
+        <div (click)="scrollToSection('experience')" class="mobile-nav-link block w-full text-left px-3 py-2">Experience</div>
+        <div (click)="scrollToSection('skills')" class="mobile-nav-link block w-full text-left px-3 py-2">Skills</div>
+        <div (click)="scrollToSection('testimonials')" class="mobile-nav-link block w-full text-left px-3 py-2">Testimonials</div>
+        <div (click)="scrollToSection('contact')" class="mobile-nav-link block w-full text-left px-3 py-2">Contact</div>
       </div>
     </div>
   </header>
