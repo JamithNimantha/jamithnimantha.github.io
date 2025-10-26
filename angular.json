@@ -113,9 +113,10 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/jamithnimantha.github.io/",
-            "name": "Jamith Nimantha",
-            "email": "jamith@gmail.com"
+            "baseHref": "/",
+            "cname": "jamith.com",
+            "name": "JamithNimantha",
+            "email": "jamithnimantha@gmail.com"
           }
         }
       }
