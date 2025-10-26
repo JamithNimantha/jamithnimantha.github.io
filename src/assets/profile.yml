@@ -25,6 +25,10 @@ socialLinks:
     icon: x
 
   - name: Blog
+    url: https://blog.jamith.com
+    icon: blogger
+
+  - name: Website
     url: https://debuggerme.com
     icon: blog
 
@@ -35,4 +39,3 @@ socialLinks:
   - name: GitLab
     url: https://gitlab.com/jamith
     icon: gitlab
-
